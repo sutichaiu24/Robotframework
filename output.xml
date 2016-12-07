@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161203 02:03:02.128" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\Users\sutic\Documents\Robotframework\phptravel.robot" id="s1" name="Phptravel">
+<test id="s1-t1" name="Test get phptravels">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20161203 02:03:03.011" level="INFO">Opening browser 'chrome' to base url 'http://phptravels.net/hotels/singapore/singapore/Rendezvous-Hotels'</msg>
+<status status="PASS" endtime="20161203 02:03:19.837" starttime="20161203 02:03:03.010"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20161203 02:03:21.857" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20161203 02:03:21.859" starttime="20161203 02:03:19.856"></status>
+</kw>
+<kw name="Get Matching Xpath Count" library="Selenium2Library">
+<doc>Returns number of elements matching `xpath`</doc>
+<arguments>
+<arg>//*[@id="ROOMS"]/form[*]/div/div[2]/div[2]/h4/b</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20161203 02:03:22.070" level="INFO">${count} = 2</msg>
+<status status="PASS" endtime="20161203 02:03:22.071" starttime="20161203 02:03:21.863"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Amount</arg>
+<arg>${count}</arg>
+</arguments>
+<status status="PASS" endtime="20161203 02:03:22.081" starttime="20161203 02:03:22.077"></status>
+</kw>
+<kw type="for" name="${i} IN RANGE [ 1 | ${count}+1 ]">
+<kw type="foritem" name="${i} = 1">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="ROOMS"]/form[${i}]/div/div[2]/div[2]/h4/b</arg>
+</arguments>
+<assign>
+<var>${room}</var>
+</assign>
+<msg timestamp="20161203 02:03:22.222" level="INFO">${room} = Superior Double</msg>
+<status status="PASS" endtime="20161203 02:03:22.222" starttime="20161203 02:03:22.087"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${room}</arg>
+</arguments>
+<status status="PASS" endtime="20161203 02:03:22.226" starttime="20161203 02:03:22.223"></status>
+</kw>
+<status status="PASS" endtime="20161203 02:03:22.226" starttime="20161203 02:03:22.086"></status>
+</kw>
+<kw type="foritem" name="${i} = 2">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="ROOMS"]/form[${i}]/div/div[2]/div[2]/h4/b</arg>
+</arguments>
+<assign>
+<var>${room}</var>
+</assign>
+<msg timestamp="20161203 02:03:22.528" level="INFO">${room} = One-Bedroom Apartment</msg>
+<status status="PASS" endtime="20161203 02:03:22.529" starttime="20161203 02:03:22.227"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${room}</arg>
+</arguments>
+<status status="PASS" endtime="20161203 02:03:22.536" starttime="20161203 02:03:22.531"></status>
+</kw>
+<status status="PASS" endtime="20161203 02:03:22.537" starttime="20161203 02:03:22.226"></status>
+</kw>
+<status status="PASS" endtime="20161203 02:03:22.537" starttime="20161203 02:03:22.083"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161203 02:03:25.691" starttime="20161203 02:03:22.541"></status>
+</kw>
+<status status="PASS" endtime="20161203 02:03:25.695" critical="yes" starttime="20161203 02:03:03.005"></status>
+</test>
+<status status="PASS" endtime="20161203 02:03:25.713" starttime="20161203 02:03:02.141"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Phptravel" pass="1">Phptravel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
