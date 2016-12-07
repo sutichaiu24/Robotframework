@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-Resource    Key
+Resource    Gherkin.robot
 *** variables ***
 
 ${URL}      http://phptravels.net/hotels/singapore/singapore/Rendezvous-Hotels
