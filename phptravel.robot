@@ -3,7 +3,7 @@ Library     Selenium2Library
 Resource    Gherkin.robot
 *** variables ***
 
-${URL}      http://phptravels.net/hotels/singapore/singapore/Rendezvous-Hotels
+${URL}      https://www.google.co.th/maps
 
 *** Test Cases ***
 Scenario: Test the website
@@ -11,7 +11,15 @@ Scenario: Test the website
     And Click Element at the button
 
 
+
 *** Keywords ***
 Click Element at the button
-    click elem    //*[@id="OVERVIEW"]/div/div[1]/div[1]/div[1]/div[2]/a
+        wait until page contains element    //*[@id="scene"]/div[3]/canvas
+        sleep    3s
+        mouse over      //*[@id="scene"]/div[3]/canvas
 
+
+        click element at coordinates    //*[@id="scene"]/div[3]/canvas     ${692}            ${121}
+        click element at coordinates    //*[@id="scene"]/div[3]/canvas    ${500}           ${187}
+         click element at coordinates    //*[@id="scene"]/div[3]/canvas    ${400}           ${187}
+          click element at coordinates    //*[@id="scene"]/div[3]/canvas    ${565}           ${287}

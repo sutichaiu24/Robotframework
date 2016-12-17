@@ -1,95 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20161203 02:03:02.128" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<robot generated="20161217 14:42:26.705" generator="Robot 3.0 (Python 2.7.12 on win32)">
 <suite source="C:\Users\sutic\Documents\Robotframework\phptravel.robot" id="s1" name="Phptravel">
-<test id="s1-t1" name="Test get phptravels">
+<test id="s1-t1" name="Scenario: Test the website">
+<kw name="Given Open the test phptravels" library="Gherkin">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20161203 02:03:03.011" level="INFO">Opening browser 'chrome' to base url 'http://phptravels.net/hotels/singapore/singapore/Rendezvous-Hotels'</msg>
-<status status="PASS" endtime="20161203 02:03:19.837" starttime="20161203 02:03:03.010"></status>
+<msg timestamp="20161217 14:42:27.356" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.th/maps'</msg>
+<status status="PASS" endtime="20161217 14:42:34.232" starttime="20161217 14:42:27.356"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20161203 02:03:21.857" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20161203 02:03:21.859" starttime="20161203 02:03:19.856"></status>
+<msg timestamp="20161217 14:42:36.234" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20161217 14:42:36.234" starttime="20161217 14:42:34.233"></status>
 </kw>
-<kw name="Get Matching Xpath Count" library="Selenium2Library">
-<doc>Returns number of elements matching `xpath`</doc>
+<status status="PASS" endtime="20161217 14:42:36.235" starttime="20161217 14:42:27.355"></status>
+</kw>
+<kw name="And Click Element at the button">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
-<arg>//*[@id="ROOMS"]/form[*]/div/div[2]/div[2]/h4/b</arg>
+<arg>//*[@id="scene"]/div[3]/canvas</arg>
 </arguments>
-<assign>
-<var>${count}</var>
-</assign>
-<msg timestamp="20161203 02:03:22.070" level="INFO">${count} = 2</msg>
-<status status="PASS" endtime="20161203 02:03:22.071" starttime="20161203 02:03:21.863"></status>
+<status status="PASS" endtime="20161217 14:42:40.685" starttime="20161217 14:42:36.242"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>Amount</arg>
-<arg>${count}</arg>
+<arg>3s</arg>
 </arguments>
-<status status="PASS" endtime="20161203 02:03:22.081" starttime="20161203 02:03:22.077"></status>
+<msg timestamp="20161217 14:42:43.687" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20161217 14:42:43.687" starttime="20161217 14:42:40.686"></status>
 </kw>
-<kw type="for" name="${i} IN RANGE [ 1 | ${count}+1 ]">
-<kw type="foritem" name="${i} = 1">
-<kw name="Get Text" library="Selenium2Library">
-<doc>Returns the text value of element identified by `locator`.</doc>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
 <arguments>
-<arg>//*[@id="ROOMS"]/form[${i}]/div/div[2]/div[2]/h4/b</arg>
+<arg>//*[@id="scene"]/div[3]/canvas</arg>
 </arguments>
-<assign>
-<var>${room}</var>
-</assign>
-<msg timestamp="20161203 02:03:22.222" level="INFO">${room} = Superior Double</msg>
-<status status="PASS" endtime="20161203 02:03:22.222" starttime="20161203 02:03:22.087"></status>
+<msg timestamp="20161217 14:42:43.688" level="INFO">Simulating Mouse Over on element '//*[@id="scene"]/div[3]/canvas'</msg>
+<status status="PASS" endtime="20161217 14:42:43.749" starttime="20161217 14:42:43.688"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Click Element At Coordinates" library="Selenium2Library">
+<doc>Click element identified by `locator` at x/y coordinates of the element.</doc>
 <arguments>
-<arg>${room}</arg>
+<arg>//*[@id="scene"]/div[3]/canvas</arg>
+<arg>${692}</arg>
+<arg>${121}</arg>
 </arguments>
-<status status="PASS" endtime="20161203 02:03:22.226" starttime="20161203 02:03:22.223"></status>
+<msg timestamp="20161217 14:42:43.751" level="INFO">Click clicking element '//*[@id="scene"]/div[3]/canvas' in coordinates '692', '121'.</msg>
+<status status="PASS" endtime="20161217 14:42:43.843" starttime="20161217 14:42:43.750"></status>
 </kw>
-<status status="PASS" endtime="20161203 02:03:22.226" starttime="20161203 02:03:22.086"></status>
-</kw>
-<kw type="foritem" name="${i} = 2">
-<kw name="Get Text" library="Selenium2Library">
-<doc>Returns the text value of element identified by `locator`.</doc>
+<kw name="Click Element At Coordinates" library="Selenium2Library">
+<doc>Click element identified by `locator` at x/y coordinates of the element.</doc>
 <arguments>
-<arg>//*[@id="ROOMS"]/form[${i}]/div/div[2]/div[2]/h4/b</arg>
+<arg>//*[@id="scene"]/div[3]/canvas</arg>
+<arg>${500}</arg>
+<arg>${187}</arg>
 </arguments>
-<assign>
-<var>${room}</var>
-</assign>
-<msg timestamp="20161203 02:03:22.528" level="INFO">${room} = One-Bedroom Apartment</msg>
-<status status="PASS" endtime="20161203 02:03:22.529" starttime="20161203 02:03:22.227"></status>
+<msg timestamp="20161217 14:42:43.845" level="INFO">Click clicking element '//*[@id="scene"]/div[3]/canvas' in coordinates '500', '187'.</msg>
+<status status="PASS" endtime="20161217 14:42:43.974" starttime="20161217 14:42:43.843"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Click Element At Coordinates" library="Selenium2Library">
+<doc>Click element identified by `locator` at x/y coordinates of the element.</doc>
 <arguments>
-<arg>${room}</arg>
+<arg>//*[@id="scene"]/div[3]/canvas</arg>
+<arg>${400}</arg>
+<arg>${187}</arg>
 </arguments>
-<status status="PASS" endtime="20161203 02:03:22.536" starttime="20161203 02:03:22.531"></status>
+<msg timestamp="20161217 14:42:43.975" level="INFO">Click clicking element '//*[@id="scene"]/div[3]/canvas' in coordinates '400', '187'.</msg>
+<status status="PASS" endtime="20161217 14:42:44.086" starttime="20161217 14:42:43.974"></status>
 </kw>
-<status status="PASS" endtime="20161203 02:03:22.537" starttime="20161203 02:03:22.226"></status>
+<kw name="Click Element At Coordinates" library="Selenium2Library">
+<doc>Click element identified by `locator` at x/y coordinates of the element.</doc>
+<arguments>
+<arg>//*[@id="scene"]/div[3]/canvas</arg>
+<arg>${565}</arg>
+<arg>${287}</arg>
+</arguments>
+<msg timestamp="20161217 14:42:44.087" level="INFO">Click clicking element '//*[@id="scene"]/div[3]/canvas' in coordinates '565', '287'.</msg>
+<status status="PASS" endtime="20161217 14:42:44.392" starttime="20161217 14:42:44.086"></status>
 </kw>
-<status status="PASS" endtime="20161203 02:03:22.537" starttime="20161203 02:03:22.083"></status>
+<status status="PASS" endtime="20161217 14:42:44.393" starttime="20161217 14:42:36.240"></status>
 </kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20161203 02:03:25.691" starttime="20161203 02:03:22.541"></status>
-</kw>
-<status status="PASS" endtime="20161203 02:03:25.695" critical="yes" starttime="20161203 02:03:03.005"></status>
+<status status="PASS" endtime="20161217 14:42:44.395" critical="yes" starttime="20161217 14:42:27.351"></status>
 </test>
-<status status="PASS" endtime="20161203 02:03:25.713" starttime="20161203 02:03:02.141"></status>
+<status status="PASS" endtime="20161217 14:42:44.408" starttime="20161217 14:42:26.716"></status>
 </suite>
 <statistics>
 <total>
