@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d125a20d-6b5c-4050-a94a-9127da9e9d28" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gherkin.robot" afterPath="$PROJECT_DIR$/Gherkin.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" afterPath="$PROJECT_DIR$/selenium-screenshot-1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.html" afterPath="$PROJECT_DIR$/log.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.xml" afterPath="$PROJECT_DIR$/output.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phptravel.robot" afterPath="$PROJECT_DIR$/phptravel.robot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report.html" afterPath="$PROJECT_DIR$/report.html" />
     </list>
     <ignored path="Robotframework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +31,8 @@
       <file leaf-file-name="phptravel.robot" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phptravel.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+            <state relative-caret-position="609">
+              <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
               <folding>
                 <element signature="e#0#132#0" expanded="true" />
               </folding>
@@ -585,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phptravel.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+        <state relative-caret-position="609">
+          <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
           <folding>
             <element signature="e#0#132#0" expanded="true" />
           </folding>

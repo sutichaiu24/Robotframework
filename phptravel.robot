@@ -14,12 +14,17 @@ Scenario: Test the website
 
 *** Keywords ***
 Click Element at the button
-        wait until page contains element    //*[@id="scene"]/div[3]/canvas
+        wait until page contains element    //*[@id="searchboxinput"]
         sleep    3s
-        mouse over      //*[@id="scene"]/div[3]/canvas
-
-
-        click element at coordinates    //*[@id="scene"]/div[3]/canvas     ${692}            ${121}
-        click element at coordinates    //*[@id="scene"]/div[3]/canvas    ${500}           ${187}
-         click element at coordinates    //*[@id="scene"]/div[3]/canvas    ${400}           ${187}
-          click element at coordinates    //*[@id="scene"]/div[3]/canvas    ${565}           ${287}
+        click element at coordinates    //*[@id="searchboxinput"]    692           121
+        sleep   10s
+        click element at coordinates    //*[@id="searchboxinput"]    700           780
+        sleep   2s
+        click element at coordinates    //*[@id="searchboxinput"]    700           780
+        sleep     8s
+        click element at coordinates    //*[@id="searchboxinput"]    955         400
+        sleep   2s
+        click element at coordinates    //*[@id="searchboxinput"]    955          290
+        sleep   8s
+        click element at coordinates    //*[@id="searchboxinput"]    565           800
+        click element at coordinates    //*[@id="searchboxinput"]    450          287
