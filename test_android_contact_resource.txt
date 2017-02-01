@@ -1,0 +1,30 @@
+*** Settings ***
+Library           AppiumLibrary
+
+*** Variables ***
+${REMOTE_URL}     http://127.0.0.1:4723/wd/hub
+${PLATFORM_NAME}    Android
+${PLATFORM_VERSION}    ${6.0}
+${APP}            C:\\Users\\sutic\\Documents\\sample-code\\sample-code\\apps\\Calendar\\AD-Calendar-0.50.apk
+
+*** Keywords ***
+add new contact
+    [Arguments]    ${contact_name}    ${contact_phone}    ${contact_email}
+    Open Application    ${REMOTE_URL}    ${PLATFORM_NAME}    ${PLATFORM_VERSION}    ${DEVICE_NAME}    ${APP}
+    Click Element    accessibility_id=Add Contact
+    Input Text    id=com.example.android.contactmanager:id/contactNameEditText    ${contact_name}
+    Input Text    id=com.example.android.contactmanager:id/contactPhoneEditText    ${contact_phone}
+    Input Text    id=com.example.android.contactmanager:id/contactEmailEditText    ${contact_email}
+    Click Element    accessibility_id=Save
+open Calendar
+	Open Application   	    ${REMOTE_URL}   platformName=Android    platformVersion=6.0  deviceName=K6T6R16A31001671      appPackgage=com.allianz.modular.th   appActivity=com.allianz.modular.th.MainActivity
+    ${context}=     Get Current Context
+    Log to Console      ${context} 
+    Sleep   6s
+    Click Element       android=new UiSelector().clickable(true).className("android.widget.Button").index(0)
+    ${context}=     Get Current Context
+    Log to Console      ${context} 
+    Sleep   6s   
+   
+tear down
+    Close Application
