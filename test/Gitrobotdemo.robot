@@ -19,3 +19,7 @@ Test second house build by wood
 Test third house build by rock
       use wind 		rock 
       house should be still	sd
+
+ลูกหมูตัวทีสี่สร้างบ้านด้วยยางรถยนเสริมใยเหล็
+      เอาอาก้ายิง รถยนต์
+      บ้านไม่พัง
