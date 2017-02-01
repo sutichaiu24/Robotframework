@@ -20,9 +20,15 @@ Test third house build by rock
       use wind 		rock 
       house should be still	sd
 
+<<<<<<< HEAD
 ลูกหมูตัวทีสี่ไปอยู่บ้านพ่อง
       จบน่ะ
 ลูกหมูตัวทีสี่สร้างบ้านด้วยยางรถยนเสริมใยเหล็
       เอาอาก้ายิง รถยนต์
       บ้านไม่พัง
 
+=======
+หมูตัวที่สี่สร้างบ้านจากไทเทเนี่ยม
+	  use wind 		titanium
+	  houseshould be still sd
+>>>>>>> poy
