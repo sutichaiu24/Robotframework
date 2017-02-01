@@ -19,3 +19,7 @@ Test second house build by wood
 Test third house build by rock
       use wind 		rock 
       house should be still	sd
+
+หมูตัวที่สี่สร้างบ้านจากไทเทเนี่ยม
+	  use wind 		titanium
+	  houseshould be still sd
