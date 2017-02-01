@@ -19,3 +19,5 @@ Test second house build by wood
 Test third house build by rock
       use wind 		rock 
       house should be still	sd
+ลูกหมูตัวทีสี่ไปอยู่บ้านพ่อง
+      จบน่ะ
