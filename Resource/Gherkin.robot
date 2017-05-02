@@ -2,12 +2,6 @@
 Library     Selenium2Library
 
 
-
-
-
-
-
-
 *** Keywords ***
 Open the test phptravels
       open browser    ${URL}      chrome
